@@ -33,16 +33,16 @@ export default function Header() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled || !isHome
-          ? "bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-xs"
+          ? "bg-white/85 backdrop-blur-2xl border-b border-white/70 shadow-lg shadow-slate-900/5"
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl flex items-center justify-between px-6 h-16 lg:h-20">
-        <Link href="/" className="flex items-center gap-2.5">
+      <div className="container-shell flex h-16 items-center justify-between lg:h-20">
+        <Link href="/" className="group flex items-center gap-2.5">
           <img
             src="/images/Logo.png"
             alt="LimaSync"
-            className="size-8"
+            className="size-9 rounded-xl shadow-sm transition-transform group-hover:scale-105"
           />
           <span
             className={`font-bold text-xl tracking-tight ${
@@ -53,19 +53,19 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-2 rounded-full border border-white/60 bg-white/50 p-1.5 shadow-sm backdrop-blur-xl">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`rounded-full px-3.5 py-2 text-sm font-medium transition-all whitespace-nowrap ${
                 pathname === link.href
                   ? scrolled || !isHome
-                    ? "text-brand-600"
-                    : "text-white"
+                    ? "bg-brand-50 text-brand-700 shadow-sm"
+                    : "bg-white/10 text-white shadow-sm"
                   : scrolled || !isHome
-                    ? "text-gray-600 hover:text-brand-600"
-                    : "text-white/80 hover:text-white"
+                    ? "text-gray-600 hover:bg-white hover:text-brand-700"
+                    : "text-white/80 hover:bg-white/10 hover:text-white"
               }`}
             >
               {link.label}
@@ -73,7 +73,7 @@ export default function Header() {
           ))}
           <Link
             href="/contacto"
-            className="inline-flex items-center bg-brand-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-brand-700 transition-all active:scale-[0.97]"
+            className="ml-2 inline-flex items-center rounded-full bg-gradient-to-r from-brand-600 to-secondary-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-brand-700/20 transition-all hover:-translate-y-0.5 active:scale-[0.97]"
           >
             Agenda una demo
           </Link>

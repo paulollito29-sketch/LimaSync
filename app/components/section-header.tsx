@@ -19,7 +19,7 @@ export default function SectionHeader({
       transition={{ duration: 0.5 }}
       className="text-center max-w-2xl mx-auto mb-16"
     >
-      <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+      <span className="brand-pill mb-4">
         <span className="size-2 bg-brand-500 rounded-full" />
         {badge}
       </span>

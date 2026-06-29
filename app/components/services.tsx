@@ -7,8 +7,8 @@ import { services } from "@/lib/data"
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-24 lg:py-32 bg-white">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="servicios" className="section-shell bg-white">
+      <div className="container-shell">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function Services() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+          <span className="brand-pill mb-4">
             Servicios
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
