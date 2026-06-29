@@ -61,8 +61,8 @@ const solutions = [
 
 export default function ProblemSolution() {
   return (
-    <section className="py-24 lg:py-32 bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="section-shell mesh-bg">
+      <div className="container-shell">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export default function ProblemSolution() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+          <span className="brand-pill mb-4">
             <span className="size-2 bg-brand-500 rounded-full" />
             Problema → Solución
           </span>
@@ -98,7 +98,7 @@ export default function ProblemSolution() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="flex gap-4 bg-white rounded-xl p-5 border border-gray-200 hover:border-red-200 transition-colors"
+                className="glass-card flex gap-4 rounded-2xl p-5 transition-all hover:border-red-200"
               >
                 <div className="shrink-0 size-11 bg-red-50 rounded-lg flex items-center justify-center">
                   <item.icon className="size-5 text-red-500" />
@@ -127,7 +127,7 @@ export default function ProblemSolution() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="flex gap-4 bg-white rounded-xl p-5 border border-gray-200 hover:border-brand-200 transition-colors"
+                className="glass-card flex gap-4 rounded-2xl p-5 transition-all hover:border-brand-200"
               >
                 <div className="shrink-0 size-11 bg-brand-50 rounded-lg flex items-center justify-center">
                   <item.icon className="size-5 text-brand-500" />

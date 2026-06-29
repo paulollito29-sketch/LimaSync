@@ -6,12 +6,12 @@ import { FiArrowRight, FiCheck } from "react-icons/fi"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gray-950">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-slate-950">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#45adad_0%,_transparent_60%)] opacity-20" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_#59c3c3_0%,_transparent_50%)] opacity-10" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,_#ffffff03_1px,_transparent_1px),_linear-gradient(to_bottom,_#ffffff03_1px,_transparent_1px)] bg-[size:32px_32px]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-32 lg:py-40">
+      <div className="container-shell py-32 lg:py-40">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -23,7 +23,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.4 }}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-1.5 mb-6 shadow-lg shadow-brand-950/20 backdrop-blur-xl"
             >
               <span className="size-2 bg-brand-400 rounded-full animate-pulse" />
               <span className="text-brand-200 text-sm font-medium">
@@ -47,7 +47,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl lg:mx-0"
             >
               Ayudamos a PYMES peruanas a digitalizar sus procesos en tiempo récord.
               Página web, automatización o CRM — todo lo que necesitas para crecer,
@@ -62,14 +62,14 @@ export default function Hero() {
             >
               <Link
                 href="/contacto"
-                className="inline-flex items-center justify-center gap-2 bg-brand-600 text-white px-7 py-3.5 rounded-xl text-base font-semibold hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-600/25 active:scale-[0.97]"
+                className="primary-cta"
               >
                 Agenda tu demo gratuita
                 <FiArrowRight className="size-4" />
               </Link>
               <Link
                 href="/servicios"
-                className="inline-flex items-center justify-center border-2 border-white/15 text-white px-7 py-3.5 rounded-xl text-base font-semibold hover:bg-white/10 transition-all active:scale-[0.97]"
+                className="secondary-cta"
               >
                 Ver servicios
               </Link>
@@ -102,11 +102,11 @@ export default function Hero() {
             className="hidden lg:block relative"
           >
             <div className="absolute -inset-6 bg-gradient-to-r from-brand-500/20 to-brand-400/20 rounded-3xl blur-3xl" />
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="glass-card relative overflow-hidden rounded-[2rem] p-3">
               <img
                 src="/images/Efficiency_and_productivity_for_small_202606232142.jpeg"
                 alt="Empresario peruano transformando su negocio con tecnología"
-                className="w-full h-auto object-cover"
+                className="h-auto w-full rounded-[1.4rem] object-cover"
               />
             </div>
           </motion.div>

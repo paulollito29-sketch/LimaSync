@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
 
       <section className="py-16 bg-white border-b border-gray-100">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="container-shell">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { label: "Proyectos entregados", value: "+120" },
@@ -30,9 +30,9 @@ export default function Home() {
 
       <ProblemSolution />
 
-      <section className="py-24 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+      <section className="section-shell bg-white">
+        <div className="container-shell text-center">
+          <span className="brand-pill mb-4">
             Servicios destacados
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-4">
@@ -98,9 +98,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-28 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+      <section className="section-shell mesh-bg">
+        <div className="container-shell text-center">
+          <span className="brand-pill mb-4">
             Caso de éxito
           </span>
           <blockquote className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
@@ -132,7 +132,7 @@ export default function Home() {
 
       <section className="py-24 lg:py-28 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_#45adad14_0%,_transparent_60%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 text-center">
+        <div className="container-shell text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
             ¿Listo para digitalizar tu negocio?
           </h2>
