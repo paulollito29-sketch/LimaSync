@@ -101,32 +101,20 @@ export default function Home() {
       <section className="py-24 lg:py-28 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
-            Caso de éxito
+            Testimonios
           </span>
-          <blockquote className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
-            &ldquo;Antes perdía pedidos por WhatsApp todo el tiempo. Con LimaSync
-            automatizamos las confirmaciones y las ventas subieron{" "}
-            <strong className="text-gray-900">40% en dos meses</strong>.&rdquo;
-          </blockquote>
-          <div className="flex items-center justify-center gap-4">
-            <div className="size-12 rounded-full bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white font-semibold">
-              MG
-            </div>
-            <div className="text-left">
-              <div className="font-semibold text-gray-900">María García</div>
-              <div className="text-sm text-gray-500">
-                Dueña de Restaurant La Mar, Miraflores
-              </div>
-            </div>
-          </div>
-          <div className="mt-10">
-            <Link
-              href="/testimonios"
-              className="text-brand-600 font-semibold text-sm hover:text-brand-700 transition-colors"
-            >
-              Ver más testimonios →
-            </Link>
-          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Lo que dicen nuestros clientes
+          </h2>
+          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+            Pymes peruanas que ya transformaron sus ventas con LimaSync.
+          </p>
+          <Link
+            href="/testimonios"
+            className="inline-flex items-center gap-2 bg-brand-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-brand-700 transition-all hover:shadow-lg hover:shadow-brand-600/25 active:scale-[0.97]"
+          >
+            Ver todos los testimonios <FiArrowRight className="size-4" />
+          </Link>
         </div>
       </section>
 
