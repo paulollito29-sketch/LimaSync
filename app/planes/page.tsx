@@ -13,8 +13,8 @@ export default function PlanesPage() {
   return (
     <>
       <section className="pt-32 pb-16 lg:pt-36 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <span className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
+        <div className="container-shell text-center">
+          <span className="brand-pill mb-4">
             Precios
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-4">
@@ -28,7 +28,7 @@ export default function PlanesPage() {
       </section>
 
       <section className="py-16 lg:py-24 bg-white">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="container-shell">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {plans.map((plan) => (
               <div
@@ -80,7 +80,7 @@ export default function PlanesPage() {
                 </ul>
                 <Link
                   href={plan.href}
-                  className="block text-center bg-brand-600 text-white py-3 rounded-xl text-sm font-semibold hover:bg-brand-700 transition-all active:scale-[0.98]"
+                  className="block rounded-2xl bg-gradient-to-r from-brand-600 to-secondary-500 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-brand-700/20 transition-all hover:-translate-y-0.5 active:scale-[0.98]"
                 >
                   {plan.cta}
                 </Link>
